@@ -1,7 +1,7 @@
 import { PRODUCTS_RECEIVED, PRODUCTSTATS_RECEIVED } from './appActionTypes'
 import { getProducts, getProductStats } from 'util/api'
 
-function productsReceived( products, status ){
+export function productsReceived( products, status ){
     return {
         type: PRODUCTS_RECEIVED,
         products: products,
@@ -9,7 +9,7 @@ function productsReceived( products, status ){
     }
 }
 
-function productStatsReceived( id, productStats ){
+export function productStatsReceived( id, productStats ){
     return {
         type: PRODUCTSTATS_RECEIVED,
         id: id,

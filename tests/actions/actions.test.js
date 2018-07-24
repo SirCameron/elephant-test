@@ -72,7 +72,7 @@ describe( 'test async actions', ()=>{
         sandbox.restore()
     } )
 
-    it( 'should load products into state', () => {
+    it( 'should load products and fire correct action', () => {
         const resolved = new Promise( ( r ) => r( { data: testProducts } ) )
         sandbox.stub( axios, 'get' ).returns( resolved )
 

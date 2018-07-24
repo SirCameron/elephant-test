@@ -19,7 +19,7 @@ export function productStatsReceived( id, productStats ){
 
 export function loadProductStats( id ){
     return dispatch => {
-        getProductStats( id )
+        return getProductStats( id )
             .then( 
                 stats => { 
                     dispatch( productStatsReceived( id, stats ) ) 
@@ -33,7 +33,7 @@ export function loadProductStats( id ){
 
 export function loadProducts(){
     return dispatch => {
-        getProducts()
+        return getProducts()
             .then( 
                 products => { 
                     dispatch( productsReceived( products, true ) ) 

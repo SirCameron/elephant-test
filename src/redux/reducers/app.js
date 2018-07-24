@@ -1,6 +1,6 @@
 import { PRODUCTS_RECEIVED, PRODUCTSTATS_RECEIVED } from 'redux/actions/appActionTypes'
 
-const initialState = {
+export const initialState = {
     products: [],
     loaded: null
 }
